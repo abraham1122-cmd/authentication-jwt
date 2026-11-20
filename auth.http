@@ -1,0 +1,28 @@
+
+
+
+
+### register
+
+POST http://localhost:3000/auth/register
+Content-Type: application/json;
+
+{
+    "email": "beki@gmail.com",
+    "password": "beki1234"
+}
+
+### login
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json;
+
+{
+     "email": "beki@gmail.com",
+    "password": "beki1234"
+}
+
+
+### Access protected profile
+GET http://localhost:3000/auth/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYmVraUBnbWFpbC5jb20iLCJpYXQiOjE3OTUyMTA2OTgsImV4cCI6MTc5NTIxMTU5OH0.6uWxHvhndVk8D6ZyfaoNejJvHFZ-6qAGtrBN2HGEzYM
